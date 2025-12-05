@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Resume</title>
+    <style>
+        /* ส่วนของ CSS: ตกแต่งความสวยงาม */
+        body {
+            font-family: 'Sarabun', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 800px;
+            background-color: #fff;
+            margin: 0 auto;
+            padding: 40px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* เพิ่มเงาให้ชัดขึ้นนิดหน่อย */
+            border-radius: 8px;
+        }
+
+        header {
+            text-align: center;
+            border-bottom: 2px solid #e9ecef; /* เปลี่ยนสีเส้นคั่นให้เบาลง */
+            padding-bottom: 30px;
+            margin-bottom: 30px;
+        }
+
+        /* --- CSS ที่เพิ่มมาใหม่สำหรับรูปภาพ --- */
+        .profile-img {
+            width: 160px;  /* กำหนดความกว้าง */
+            height: 160px; /* กำหนดความสูง (ต้องเท่ากับกว้างเพื่อให้เป็นวงกลมเป๊ะๆ) */
+            border-radius: 50%; /* คำสั่งวิเศษที่ทำให้รูปสี่เหลี่ยมกลายเป็นวงกลม */
+            object-fit: cover; /* สำคัญมาก! ช่วยให้รูปไม่เบี้ยวถ้ารูปต้นฉบับไม่ใช่จัตุรัส */
+            border: 5px solid #fff; /* ขอบสีขาวเพื่อให้ตัดกับพื้นหลัง */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.15); /* เงาที่ตัวรูป */
+            margin-bottom: 15px; /* เว้นระยะห่างจากชื่อ */
+        }
+        /* ----------------------------------- */
+
+        h1 {
+            margin: 0;
+            color: #2c3e50;
+            font-size: 2.5em;
+        }
+
+        .job-title {
+            color: #007bff;
+            font-size: 1.3em; /* เพิ่มขนาดนิดหน่อย */
+            font-weight: bold;
+            margin-top: 5px;
+            margin-bottom: 15px;
+        }
+
+        .contact-info {
+            font-size: 0.95em;
+            color: #555;
+            background-color: #f8f9fa; /* ใส่พื้นหลังสีเทาจางๆ ให้ส่วนติดต่อ */
+            padding: 15px;
+            border-radius: 8px;
+            display: inline-block; /* เพื่อให้พื้นหลังคลุมพอดีข้อความ */
+        }
+
+        h2 {
+            color: #2c3e50;
+            border-left: 5px solid #007bff;
+            padding-left: 15px;
+            margin-top: 35px;
+            margin-bottom: 20px;
+            font-size: 1.6em;
+        }
+
+        .job-item, .education-item {
+            margin-bottom: 25px;
+            border-bottom: 1px solid #eee; /* เพิ่มเส้นคั่นบางๆ ระหว่างงาน */
+            padding-bottom: 15px;
+        }
+
+        .job-item:last-child, .education-item:last-child {
+            border-bottom: none; /* ไม่เอาเส้นคั่นที่อันสุดท้าย */
+        }
+
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            font-weight: bold;
+            font-size: 1.1em;
+            color: #333;
+        }
+        
+        .company-name {
+            font-weight: bold;
+        }
+
+        .date {
+            color: #007bff; /* เปลี่ยนสีวันที่เป็นสีธีม */
+            font-weight: normal;
+            font-size: 0.9em;
+            background-color: #e7f1ff;
+            padding: 2px 10px;
+            border-radius: 12px;
+        }
+
+        ul {
+            padding-left: 20px;
+            margin-top: 10px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+        }
+
+        /* Skills section styling */
+        .skills-list li {
+            margin-bottom: 12px;
+        }
+        .skill-category {
+            font-weight: bold;
+            color: #2c3e50;
+            display: inline-block;
+            width: 110px;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+            .job-header {
+                flex-direction: column;
+                margin-bottom: 5px;
+            }
+            .date {
+                display: inline-block;
+                margin-top: 5px;
+                align-self: flex-start;
+            }
+            .skill-category {
+                display: block;
+                margin-bottom: 5px;
+            }
+        }
+    </style>
+
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <img src="profile.jpg" alt="รูปโปรไฟล์ของฉัน" class="profile-img">
+            <h1>Miss Wongnudthee Ngorpok</h1>
+            <div class="job-title">Teacher</div>
+            
+            <div class="contact-info">
+                 📞 064-191-4263 &nbsp;|&nbsp; ✉️ wongnudtheengorpok@gmail.com<br>
+                 📍 Bangkok &nbsp;|&nbsp; 🔗 linkedin.com/in/wongnudn
+            </div>
+        </header>
+
+        <section>
+            <h2>📌 Profile</h2>
+            <p>
+                I have worked in administration 
+                for more than 3 years and worked in IT Support for 2 year.
+                I have a talent for teaching business computers.
+                I hope to gain experience in Business Computer from your college.
+            </p>
+        </section>
+
+        <section>
+            <h2>💼 Work Experience</h2>
+            
+            <div class="job-item">
+                <div class="job-header">
+                    <span class="company-name">Siamtech</span>
+                    <span class="date">May 2024 - Present</span>
+                </div>
+                <div><em>Teacher</em></div>
+                <ul>
+                    <li>Teaching in the field of business computing.</li>
+                    <li>Computer Skills: Microsoft Office Suite (Word, Excel, PowerPoint), Google Workspace, Data Analysis</li>
+                    <li>Specific software, machinery</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>🎓 Education</h2>
+            <div class="education-item">
+                <div class="job-header">
+                    <span class="company-name">King Mongkut's University of Technology North Bangkok</span>
+                    <span class="date">2017-2020</span>
+                </div>
+                <div>Bachelor of Science in Technical Education Computer Technology </div>
+                <div>GPAX: 3.49</div>
+            </div>
+        </section>
+
+        <section>
+            <h2>🛠️ Skills</h2>
+            <ul class="skills-list">
+                <li><span class="skill-category">Soft Skills:</span> Adaptability, Communication Skills, Problem-Solving Skills</li>
+            </ul>
+        </section>
+
+    </div>
+
+</body>
+</html>
